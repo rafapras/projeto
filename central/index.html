@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from unip.br/presencial/central/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Nov 2018 12:27:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Universidade Paulista - UNIP</title>
+<meta name="abstract" content="Universidade Paulista - UNIP" />
+<meta name="language" content="pt-br" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="robots" content="index,follow" />
+<meta name="robots" content="ALL" />
+<meta name="author" content="Equipe de Internet http://www.unip.br/comunicacao/desenvolvimento.aspx" />
+<meta name="copyright" content="Copyright &copy; 1999-2018 UNIP." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+
+<link href="../img/favicon.ico" rel="icon" type="image/ico">
+<link href="../img/favicon.ico" rel="apple-touch-icon image_src">
+<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="stylesheet" href="../includes/css/bootstrap.min.css">
+<link rel="stylesheet" href="../includes/css/plugins.min0882.css?vs20181003">
+<link rel="stylesheet" href="../includes/css/estilo-unip0882.css?vs20181003">
+<link rel="stylesheet" href="../includes/css/fonts063d.css?vs20180111">
+<link rel="stylesheet" href="../includes/css/font-awesome063d.css?vs20180111">
+<link rel="stylesheet" href="../includes/css/ico-unip4168.css?vs20180209">
+<link rel="stylesheet" href="../includes/css/icone-atendimento8fa1.css?vs20180206">
+<link rel="stylesheet" href="../includes/css/a-loader.min063d.css?vs20180111" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="../../../cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" />
+<script src="includes/js/jquery.min.html"></script>
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/presencial/includes/js/html5shiv.min.js?nocache=[20171211]"></script>
+    <script src="/presencial/includes/js/respond.min.js?nocache=[20171211]"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="../includes/css/estilo-unip-central.css">
+<link href="../../../amp.azure.net/libs/amp/1.8.3/skins/amp-default/azuremediaplayer.min.css" rel="stylesheet">
+<link href="../includes/css/modal.css" rel="stylesheet">
+</head>
+<body>
+<div id="topo-site" class="container-fluid hidemobile">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 col-lg-2 pull-left">
+                <a href="http://unip.br/presencial" title="Voltar para a p&aacute;gina inicial">
+                    <img class="img-responsive" src="../img/logo-unip-topo.png" alt="Universidade Paulista - UNIP"></a>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <ul class="links-topo-unip">
+                    <li><a class="active" href="http://unip.br/presencial" title="UNIP - Ensino Presencial">&bull; ENSINO PRESENCIAL</a></li>
+                    <li><a href="http://unip.br/ead" title="UNIP - Ensino a Dist&acirc;ncia">&bull; ENSINO A DIST&Acirc;NCIA</a></li>
+                </ul>
+            </div>
+            <!-- Form de Login -->
+            <div class="col-sm-6 col-md-7 col-lg-7 text-right">
+                <form class="form-inline form-login">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="form-group">
+                                <label for="matricula1">N&deg; MATR&Iacute;CULA:</label>
+                                <input type="text" class="matricula form-control input-sm input-topo" id="matricula1" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha1">SENHA:</label>
+                                <input type="password" class="senha form-control input-sm input-topo" id="senha1" value="">
+                            </div>
+                            <a href="#" class="btn-login-topo">ENTRAR</a>
+                        </div>
+                        <div class="links-login"><a href="../servicos/aluno/como_acessar.html">Como acessar</a> | <a href="https://sec.unip.br/frame.aspx" id="btn_esqueceu_senha__">Primeiro acesso</a> </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- User Logado EDD -->
+            <div class="col-md-5 col-sm-4 text-right cont-user-log hide">
+                <!-- login/senha-->
+                <p class="nome-aluno">
+                    &nbsp; Ol&aacute;, <span class="nome-logado">Visitante</span>.<br />
+                  <span class="email-logado"></span>
+                </p>
+               
+            </div>
+            <div class="col-md-1 col-sm-2 text-center cont-user-log no-padding hide">
+                <!-- login/senha-->
+                <a href="#" class="btn-area text-center">
+                    <i class="fa fa-user-circle hidden-xs" style="position: relative;left: 1.5px;"></i>
+                    <br>
+                    <span>&Aacute;rea do Aluno</span> </a>
+            </div>
+            <div class="col-md-1 col-sm-2 text-center cont-user-log no-padding hide">
+                <!-- login/senha-->
+                <a href="#sair" class="btn-area text-center btn-sair">
+                    <i class="fa fa-sign-out " aria-hidden="true" style="position: relative;left: 1.5px;"></i>
+                    <br>
+                    <span>Sair</span>
+                </a>
+            </div>
+        </div>
+        <!--./row -->
+    </div>
+    <!--./container -->
+</div>
+
+<style>
+    #menuNovo .sistema span {color: #263a7f;font-size: 1em;}
+    #menuNovo .sistema:hover span { color: #fff; }
+</style>
+<nav class="navbar navbar-default nav-header">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header navbar-default-mobile text-center">
+            <a type="button" id="nav-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-ead" aria-expanded="false"><span></span></a>
+            <a class="showmobile" id="logo-mob" href="http://unip.br/presencial">
+                <img alt="Logo Unip" class="logo-mobile" src="../img/Logo-unip2017-mobile.svg">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="collapse-ead">
+            <ul class="nav navbar-nav">
+
+                <!-- User Logado - Mobile -->
+                <li class="container dropdown user-logout-mob cont-user-log hidden-sm hidden-md hidden-lg">
+                    <div>
+                        <!-- login/senha-->
+                        <p class="nome-aluno">
+                            <i class="fa fa-user-circle hidden-xs"></i>&nbsp; Ol&aacute;, <span class="nome-logado">Visitante</span>.<br>
+                            <a href="#" class="btn-sair">SAIR <i class="fa fa-sign-out"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <ul class="text-center ico-mobile">
+                    <li type="button" class="ig-icon" onClick="window.open('https://www.instagram.com/_unipoficial', '_blank')"></li>
+                    <li type="button" class="fb-icon" onclick="window.open('https://www.facebook.com/UNIPOficial', '_blank')"></li>
+                    <li type="button" class="y-icon" onclick="window.open('https://www.youtube.com/UNIPOficial', '_blank')"></li>
+                    <li type="button" class="in-icon" onclick="window.open('https://www.linkedin.com/company/unip', '_blank')"></li>
+                    <li class="ico-nav" alt="Atendimento" title="Atendimento"><a href="../atendimento/index.html" target="blank"><span class="icon-icone-atendimento"></span></a></li>
+                    <li class="ico-nav" alt="TV Web" title="TV Web"><a href="https://www.unip.br/tvweb/default.aspx" target="blank"><i class="iconUnip-font-ico-unip-01 fa" aria-hidden="true"></i></a></li>
+                    <li class="ico-nav" alt="Webmail" title="Webmail"><a href="https://www.unip.br/em/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    <li class="ico-nav" alt="Pesquisar" title="Pesquisar"><a href="../buscador.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li class="ico-nav ico-house" alt="Home" title="Home"><a href="http://unip.br/"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <li><a title="ï¿½rea do aluno" href="index.html" class="text-uppercase" role="button" aria-haspopup="true" aria-expanded="false">&Aacute;REA DO ALUNO</a></li>
+
+                <!-- MENU SERVIï¿½OS -->
+                <li id="menuNovo" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret hidemobile"></span>&nbsp;&nbsp;SERVI&Ccedil;OS<div type="button" id="nav-drop" class="nav-drop showmobile" aria-expanded="false"><span></span></div>
+                </a>
+                    <ul class="dropdown-menu area-menu-sistema"></ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right last-collapse hidden-xs">
+                <li type="button" class="ig-icon" onClick="window.open('https://www.instagram.com/_unipoficial', '_blank')"></li>
+                <li type="button" class="fb-icon" onclick="window.open('https://www.facebook.com/UNIPOficial', '_blank')"></li>
+                <li type="button" class="y-icon" onclick="window.open('https://www.youtube.com/UNIPOficial', '_blank')"></li>
+                <li type="button" class="in-icon" onclick="window.open('https://www.linkedin.com/company/unip', '_blank')"></li>
+                <li class="ico-nav" alt="Atendimento" title="Atendimento"><a href="../atendimento/index.html" target="blank"><span class="icon-icone-atendimento"></span></a></li>
+                <li class="ico-nav" alt="TV Web" title="TV Web"><a href="https://www.unip.br/tvweb/default.aspx" target="blank"><i class="iconUnip-font-ico-unip-01 fa" aria-hidden="true"></i></a></li>
+                <li class="ico-nav" alt="Webmail" title="Webmail"><a href="https://www.unip.br/em/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li class="ico-nav" alt="Pesquisar" title="Pesquisar"><a href="../buscador.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li class="ico-nav" alt="Home" title="Home"><a href="http://unip.br/"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="row box text-center area-botoes-sistema"></div>
+</div>
+<!-- Modal AVISOS -->
+<div class="modal fade modal-avisos-pai" id="modalPai" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-dialog-pai" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header-pai text-center">
+        <img src="../../ead/Assets/img/topo_new/logo-unip.png" alt="Logo Unip">
+        <h4 class="modal-title modal-title-pai" id="myModalLabel1">Prezado(a) <span class="nome-logado">Visitante</span>!</h4>
+      </div>        
+      <div class="modal-body modal-body-pai">
+            <!-- AVISO CARA NOVA  -->
+            <div class="modal-avisos" id="modalcaranova">
+                <div class="modal-dialog modal-dialog-avisos" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-label="Close" ref="modalcaranova"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O portal da UNIP est&aacute; de cara nova.<br>Assista ao v&iacute;deo para mais informa&ccedil;&otilde;es.</p>
+                        <div class="video-container text-center" style="display:none;">                         
+                                <video id="vid1" class="azuremediaplayer amp-default-skin" autoplay controls height="240" poster="#"></video>
+                                <source src="https://unip.streaming.mediaservices.windows.net/6ea4e05f-09bd-4a4b-a2f5-4502567af5f3/180207_AreaDoAluno_2018_Presenci.ism/manifest" type="application/vnd.ms-sstr+xml" />                        
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#"><button type="button" class="aparece btn btn-primary" >ASSISTIR AO V&Iacute;DEO</button></a>
+                    </div>
+                    </div>
+                </div>
+            </div>  
+            <!--FIMMM AVISO CARA NOVA  -->
+      </div>
+      <div class="modal-footer modal-footer-pai">
+        <label class="container-check">N&atilde;o quero mais receber esta informa&ccedil;&atilde;o.
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>         
+          
+        <button type="button" class="btn btn-primary" data-dismiss="modal">FECHAR</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<!--FIMMM Modal AVISOS -->
+
+<!-- Modal  AVA  -->
+<div class="modal fade modal-avisos modal-avisos-pai" id="modalava" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header-AVA text-center">
+        <img src="http://unip.br/ead/Assets/img/logo-Unip-AVA.svg" alt="Logo Unip Ava">
+        <button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body modal-body-pai modal-body-AVA">
+          <div class="modal-avisos" id="modalcaranova">
+              <div class="modal-dialog modal-dialog-avisos" role="document">
+                  <div class="no-padding text-right" style="margin-bottom: 5px;">
+                      <a href="#" onclick="javascript:acesso(145);"> Ir para o AVA! &nbsp<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                  </div>   
+                  <div class="modal-content">
+                    <div class="modal-body">
+                             
+                        <div class="no-padding">
+                          <p>Prezado(a) aluno(a)​,</p>
+ 
+   <p>Para a NP1 não há prova como instrumento de avaliação.<strong> A partir da resposta aos questionários de todas as unidades da disciplina, no Ambiente Virtual de Aprendizagem (AVA), a nota é atribuída</strong>  automaticamente e lançada no sistema. Portanto, atenção aos critérios de obtenção dessa nota:</p>
+ 
+<p>1. Para que seja considerada a resolução dos questionários você precisa <strong>responder, salvar e enviar</strong> (tentativas em andamento não serão computadas).</p>
+ 
+<p>2. Todos os avaliativos terão <strong>limite de 3 tentativas</strong> para realização, conforme as regras a seguir:
+I. Primeira tentativa – nota de acordo com os acertos e a pontuação do questionário.
+II. Segunda tentativa – soma das notas das duas tentativas dividida por 2.
+III. Terceira tentativa – soma das notas das três tentativas dividida por 3.</p>
+
+<p>3. Para a validação da NP1, os <strong>exercícios devem ser enviados no sistema até a data-limite para o semestre: 31/10/18</strong>. Envios após o prazo constante do calendário não serão considerados para a NP1, pois ficarão liberados novos questionários somente para estudo.</p>
+ 
+<p>A não realização dos questionários ou o envio feito fora do prazo implicam Não Consta (NC) na NP1 e necessidade de marcação de prova substitutiva</p>
+                            <br />
+                        </div>
+                       
+                    </div>
+                   
+                  </div><br />
+                  <div class="modal-content">
+                    <div class="modal-body">
+                             
+                        <div class="no-padding">
+                          <p>O Ambiente Virtual de Aprendizagem est&aacute; de cara nova.<br>Assista ao v&iacute;deo para mais informa&ccedil;&otilde;es.</p>
+                        </div>
+                        <div class="video-container text-center">
+                            <video id="vid2" class="azuremediaplayer amp-default-skin" autoplay controls height="240" poster="#"></video>
+                            <source src="https://unip.streaming.mediaservices.windows.net/c9aafbd2-8c8b-454c-aad7-6dc1fcf7c00c/180216_NovoLayout_AVA_Presencial.ism/manifest" type="application/vnd.ms-sstr+xml" />
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#"><button type="button" class="apareceAVA btn btn-primary" >ASSISTIR AO V&Iacute;DEO</button></a>
+                    </div>
+                  </div>
+              </div>
+              <br />
+              <div class="modal-dialog modal-dialog-avisos" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="no-padding">
+                          <p>Orientações sobre o preenchimento da folha de respostas.</p>
+                        </div>
+                        <!--
+                        <div class="video-container text-center">
+                            <video id="vid3" class="azuremediaplayer amp-default-skin" autoplay controls height="240" poster=""></video>
+                            <source src="https://unip.streaming.mediaservices.windows.net/c9aafbd2-8c8b-454c-aad7-6dc1fcf7c00c/180216_NovoLayout_AVA_Presencial.ism/manifest" type="application/vnd.ms-sstr+xml" />
+                        </div> 
+                        -->
+                    </div>
+                    <div class="modal-footer">
+                        <a target="_blank" href="http://tvweb3.unip.br/player/evento/index/1b782c54-64af-4a66-a243-f4d0b5094486"><button type="button" class="apareceAVA2 btn btn-primary" >ASSISTIR AO V&Iacute;DEO</button></a>
+                    </div>
+                  </div>
+              </div>
+          </div>  
+        </div>        
+        <div class="modal-footer modal-footer-pai">
+          <label style="margin-bottom: 15px;" class=" container-check text-left">N&atilde;o quero mais receber esta informa&ccedil;&atilde;o.
+              <input type="checkbox">
+              <span class="checkmark ava"></span>
+          </label>         
+          <button type="button" class="btn btn-primary" data-dismiss="modal">FECHAR</button>          
+        </div>
+     </div>
+  </div>
+</div> 
+<!-- FIM Modal  AVA  -->
+
+<!--./container -->
+<script>
+  var s1 = document.createElement('script'), s2 = document.createElement('script'), s3 = document.createElement('script');
+
+    s1.src = "../includes/js/logadoe45e.js?03";
+    s2.src = "../../../amp.azure.net/libs/amp/1.8.3/azuremediaplayer.min.js"
+    s3.src = "../includes/js/bootstrap.modal.min.js";
+    window.onload = function(){
+        document.body.appendChild(s2);
+        document.body.appendChild(s3);
+        window.setTimeout(function () { document.body.appendChild(s1); }, 1500);
+    };
+</script>
+<div class="clearfix">&nbsp;</div>
+<footer class="footer">
+  
+
+  <div class="container-fluid atalhos-rodape">
+    <h5 class="text-center">
+      <input type="button" class="ig-icon" onClick="window.open('https://www.instagram.com/_unipoficial', '_blank')">
+      <input type="button" class="fb-icon" onClick="window.open('https://www.facebook.com/UNIPOficial', '_blank')" />
+      <input type="button" class="y-icon" onClick="window.open('https://www.youtube.com/UNIPOficial', '_blank')" />
+      <input type="button" class="in-icon" onClick="window.open('https://www.linkedin.com/company/unip', '_blank')" />
+      <br class="visible-xs">
+      <a data-toggle="collapse" href="#atalhos-rodape" class="clique-rodape">Universidade Paulista - UNIP / ACESSO R&Aacute;PIDO &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a> </h5>
+  </div>
+
+  <div class="container">
+    <div id="atalhos-rodape" class="row collapse">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center center-block">
+        <ul class="links">
+          <li class="visible-xs"><a href="../vestibular/index.html"><i class="fa fa-caret-right"></i>&nbsp; <strong>PROCESSO SELETIVO</strong></a></li>
+          <li><a href="../universidade/index.html"><i class="fa fa-caret-right"></i>&nbsp; INSTITUCIONAL</a></li>
+          <li><a href="../ensino/index.html"><i class="fa fa-caret-right"></i>&nbsp; ENSINO</a></li>
+          <li><a href="../pesquisa/index.html"><i class="fa fa-caret-right"></i>&nbsp; PESQUISAS</a></li>
+          <li><a href="../servicos/index.html"><i class="fa fa-caret-right"></i>&nbsp; SERVI&Ccedil;OS</a></li>
+         
+          <li><a href="../atendimento/index.html"><i class="fa fa-caret-right"></i>&nbsp; ATENDIMENTO</a></li>
+          <li class="hidden-xs"><a href="../vestibular/index.html"><i class="fa fa-caret-right"></i>&nbsp; <strong>PROCESSO SELETIVO</strong></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <p class="texto-download-app text-center center-block">Fa&ccedil;a download do aplicativo oficial da UNIP<br>
+      <a href="https://play.google.com/store/apps/details?id=br.unip.secretariaonlineunip&amp;hl=pt" title="Aplicativo oficial da UNIP" target="_blank"><img src="../img/icon/icone_google_play.png" alt="Aplicativo oficial da UNIP"></a> <a href="https://itunes.apple.com/br/app/unip/id1263211423?mt=8" title="Aplicativo oficial da UNIP" target="_blank"><img src="../img/icon/icone_app_store.png" alt="Aplicativo oficial da UNIP"></a></p>
+  </div>
+
+  <div class="container-fluid copyright">
+    <div class="row center-block text-center">
+      <p>Copyright &copy; 1997-2018 UNIP - Universidade Paulista. Todos os direitos reservados.</p>
+    </div>
+  </div>
+  </div>
+</footer>
+<div class="loader loader-double"></div>
+<a href="#0" class="cd-top cd-is-visible cd-fade-out"><i class="arrow-up"></i></a>
+
+<script src="../includes/js/main.js"></script>
+<script src="../includes/js/nav.js"></script>
+<script src="../includes/js/login-presencial.js"></script>
+<script>
+        document.querySelector("#nav-toggle")
+        .addEventListener("click", function () {
+            this.classList.toggle("active");
+
+        });
+
+
+        $('.user-login-mob').on('click', function(){
+            event.preventDefault()
+            $('.text-login-mobile.showmobile').attr('data-toggle','dropdown');
+        });
+
+        $( ".dropdown" ).on( "click", function() {
+
+            if (!$(this).find("div").hasClass("active"))
+                $(".nav-drop.showmobile.active").removeClass("active");
+
+            $(this).find("div").toggleClass("active");
+        });
+
+        $(document)
+        .ajaxSend(function () {
+            $('.loader-double').addClass("is-active");
+        }).ajaxStop(function () {
+            $('.loader-double').removeClass("is-active");
+        });
+
+    var dados = sessionStorage.getItem('dados');
+    if(dados)
+      $('.btn-inscrevase-calltoaction').parent().remove();
+
+    //toogle rodapÃ©
+    var rodape = $('.clique-rodape');
+
+    rodape.click(function(){
+      icon = $('.clique-rodape span'); //seleciona o icone atual
+       if (icon.hasClass('glyphicon-chevron-down')){
+            icon.removeClass('glyphicon-chevron-down');
+            icon.addClass('glyphicon-chevron-up');
+        }
+        else {
+            icon.removeClass('glyphicon-chevron-up');
+            icon.addClass('glyphicon-chevron-down');
+        }
+    });
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PWP7NP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PWP7NP');</script>
+<!-- End Google Tag Manager -->
+
+<script src="../includes/js/jquery.min.js"></script>
+</body>
+
+<!-- Mirrored from unip.br/presencial/central/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Nov 2018 12:27:59 GMT -->
+</html>

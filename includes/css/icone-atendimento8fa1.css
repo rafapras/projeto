@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'icone-atendimento';
+  src:  url('../fonts/icone-atendimentof331.eot?iaocx4');
+  src:  url('../fonts/icone-atendimentof331.eot?iaocx4#iefix') format('embedded-opentype'),
+    url('../fonts/icone-atendimentof331.ttf?iaocx4') format('truetype'),
+    url('../fonts/icone-atendimentof331.woff?iaocx4') format('woff'),
+    url('../fonts/icone-atendimentof331.svg?iaocx4#icone-atendimento') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icone-atendimento' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icone-atendimento:before {
+  content: "\e900";
+  color: #fff200;
+}
+
