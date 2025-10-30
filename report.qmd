@@ -1,0 +1,59 @@
+
+---
+title: "Model Monitoring Report"
+author: "Jules"
+format:
+  html:
+    self-contained: true
+---
+
+## Introduction
+
+This report details the development and monitoring of a predictive model. The goal of this project is to create a robust model and establish a monitoring framework to track its performance over time.
+
+## Data Preparation
+
+We began by generating a synthetic dataset with a mix of numerical and categorical features, a timestamp, and a binary target variable. The data was then split into a "train" set and an "out-of-time" (OOT) set to simulate a real-world scenario where the model is used to predict on future data.
+
+## Exploratory Data Analysis
+
+We performed an exploratory data analysis (EDA) to understand the characteristics of the data. This included generating share-of-category and bad-rate plots for each feature.
+
+### Share of Category
+
+![Feature 2 Share of Category](plots/feature2_binned_share.html)
+![Category 1 Share of Category](plots/category1_binned_share.html)
+
+### Bad Rate by Category
+
+![Feature 2 Bad Rate by Category](plots/feature2_binned_bad_rate.html)
+![Category 1 Bad Rate by Category](plots/category1_binned_bad_rate.html)
+
+## Feature Engineering and Selection
+
+We used the Information Value (IV) and Population Stability Index (PSI) to select the most predictive and stable features for our model. `feature2_binned` and `category1_binned` were selected as the final features.
+
+## Model Training and Evaluation
+
+A logistic regression model was trained on the selected features. The model's performance was evaluated using the Area Under the Curve (AUC) and Kolmogorov-Smirnov (KS) statistic.
+
+| Metric | Train  | OOT    |
+|--------|--------|--------|
+| AUC    | 0.9958 | 0.9974 |
+| KS     | 0.9661 | 0.9766 |
+
+## Rolling Model Monitoring
+
+We implemented a rolling model monitoring framework to track the model's performance over time. The following charts show the monthly AUC and average predicted probability.
+
+### Monthly AUC
+
+![Monthly AUC](plots/monthly_auc.html)
+
+### Monthly Average Predicted Probability
+
+![Monthly Average Predicted Probability](plots/monthly_avg_proba.html)
+
+## Conclusion
+
+The model is performing well and appears to be stable over time. The monitoring framework is in place to detect any future performance degradation.
