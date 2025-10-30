@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-f416bb68062175d3f3eb0b6e5c19f828"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "category", "type": "nominal"}, {"field": "bad_rate", "format": ".2%", "type": "quantitative"}], "x": {"field": "category", "sort": null, "title": "Category", "type": "nominal"}, "y": {"field": "bad_rate", "title": "Bad Rate", "type": "quantitative"}}, "title": "Bad Rate by Category for feature1_binned", "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-f416bb68062175d3f3eb0b6e5c19f828": [{"category": "0", "bad_rate": 0.63}, {"category": "1", "bad_rate": 0.644}, {"category": "2", "bad_rate": 0.648}, {"category": "3", "bad_rate": 0.648}, {"category": "4", "bad_rate": 0.634}, {"category": "5", "bad_rate": 0.624}, {"category": "6", "bad_rate": 0.624}, {"category": "7", "bad_rate": 0.654}, {"category": "8", "bad_rate": 0.624}, {"category": "9", "bad_rate": 0.658}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
