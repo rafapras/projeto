@@ -2,7 +2,9 @@
 ---
 title: "Model Monitoring Report"
 author: "Jules"
-format: html
+format:
+  html:
+    self-contained: true
 ---
 
 ## Introduction
